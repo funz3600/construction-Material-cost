@@ -12,7 +12,18 @@
     <script src="https://cdn.jsdelivr.net/npm/hyperformula/dist/hyperformula.full.min.js"></script>
 </head>
 <body>
-    <header>
+    <div id="loginPage" class="login-page">
+        <div class="form">
+            <h2>Login</h2>
+            <form class="login-form">
+                <input type="text" placeholder="username" required />
+                <input type="password" placeholder="password" required />
+                <button type="submit">login</button>
+            </form>
+        </div>
+    </div>
+
+    <header id="mainContent" class="hidden">
         <div class="container">
             <div class="logo">
                 <img src="assets/logo.png" alt="Company Logo">
