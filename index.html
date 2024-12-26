@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Construction Material Cost</title>
+    <title>Construction Material Costs</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Including SheetJS, Handsontable, and HyperFormula libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
@@ -12,59 +12,46 @@
     <script src="https://cdn.jsdelivr.net/npm/hyperformula/dist/hyperformula.full.min.js"></script>
 </head>
 <body>
-    <div id="loginPage" class="login-page">
-        <div class="form">
-            <h2>Login</h2>
-            <form class="login-form">
-                <input type="text" placeholder="username" required />
-                <input type="password" placeholder="password" required />
-                <button type="submit">Login</button>
-            </form>
-        </div>
-    </div>
-
-    <div id="mainContent" class="hidden">
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <img src="assets/logo.png" alt="Company Logo">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Company Logo">
             </div>
-        </header>
-
-        <main>
-            <section id="materials" class="materials">
-                <div class="container">
-                    <h2>Materials</h2>
-                    <input type="file" id="upload" accept=".xlsx, .xls" />
-                    <div id="excelTable"></div>
-                    <button id="save">Save and Download</button>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="container">
-                <p>&copy; 2024 Construction Company. All rights reserved.</p>
-                <ul class="social-links">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Instagram</a></li>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="materials" class="materials">
+            <div class="container">
+                <h2>Materials</h2>
+                <input type="file" id="upload" accept=".xlsx, .xls" />
+                <div id="excelTable"></div>
+                <button id="save">Save and Download</button>
             </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Construction Company. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
